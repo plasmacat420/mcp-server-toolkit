@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  mcp-server:
+    build: .
+    env_file: .env
+    volumes:
+      - ./data:/app/data
+      - ./examples:/app/examples:ro
+    ports:
+      - "8000:8000"
+    environment:
+      TRANSPORT: sse
+      ROOT_DIR: /app/data
+    restart: unless-stopped

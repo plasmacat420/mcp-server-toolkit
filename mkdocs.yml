@@ -1,0 +1,18 @@
+site_name: MCP Server Toolkit
+site_description: A production-ready MCP server exposing filesystem, web search, SQLite, and system tools
+site_url: https://plasmacat420.github.io/mcp-server-toolkit
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: indigo
+    accent: indigo
+  features:
+    - navigation.instant
+    - content.code.copy
+
+nav:
+  - Home: index.md
+
+docs_dir: docs
