@@ -1,8 +1,5 @@
 """Tests for the web_search tool (httpx mocked with respx)."""
 
-import json
-
-import pytest
 import respx
 from httpx import Response
 
